@@ -1,0 +1,9 @@
+{
+  "DESIGN_NAME": "processor",
+  "VERILOG_FILES": "dir::src/*.v",
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 20,
+  "FP_PDN_MULTILAYER": true,
+  "FP_CORE_UTIL": 20,
+  "GRT_ADJUSTMENT": 0.1
+}
