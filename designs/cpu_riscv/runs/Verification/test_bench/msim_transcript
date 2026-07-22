@@ -1,0 +1,365 @@
+# Reading D:/intelFPGA_lite18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/reg_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/processor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/processor.v 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/mux3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/mux3.v 
+# -- Compiling module mux3
+# 
+# Top level modules:
+# 	mux3
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/mux.v 
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/INSTR_MEM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/INSTR_MEM.v 
+# -- Compiling module INSTR_MEM
+# 
+# Top level modules:
+# 	INSTR_MEM
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/IMM_GEN.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/IMM_GEN.v 
+# -- Compiling module IMM_GEN
+# 
+# Top level modules:
+# 	IMM_GEN
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/IFU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/IFU.v 
+# -- Compiling module IFU
+# 
+# Top level modules:
+# 	IFU
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/data_path.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/data_path.v 
+# -- Compiling module data_path
+# 
+# Top level modules:
+# 	data_path
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/data_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/data_mem.v 
+# -- Compiling module data_mem
+# 
+# Top level modules:
+# 	data_mem
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/controller.v 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/branch_comp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/branch_comp.v 
+# -- Compiling module branch_comp
+# 
+# Top level modules:
+# 	branch_comp
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl {D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:03 on Jul 21,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl" D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 16:11:03 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+
+
+cd D:/intelFPGA_lite18.1/RICSV_32bit_CPU-RICSV_single_cycle_CPU/rtl
+# reading D:/intelFPGA_lite18.1/modelsim_ase/win32aloem/../modelsim.ini
+do run_sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:11:45 on Jul 21,2026
+# vlog -reportprogress 300 alu.v branch_comp.v controller.v data_mem.v data_path.v ifu.v imm_gen.v instr_mem.v mux.v mux3.v reg_file.v processor.v ../test_bench/processor_tb.v 
+# -- Compiling module alu
+# -- Compiling module branch_comp
+# -- Compiling module controller
+# -- Compiling module data_mem
+# -- Compiling module data_path
+# -- Compiling module IFU
+# -- Compiling module IMM_GEN
+# -- Compiling module INSTR_MEM
+# -- Compiling module mux
+# -- Compiling module mux3
+# -- Compiling module reg_file
+# -- Compiling module processor
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:11:45 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 16:11:45 on Jul 21,2026
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.data_path
+# Loading work.IFU
+# Loading work.INSTR_MEM
+# Loading work.reg_file
+# Loading work.IMM_GEN
+# Loading work.mux
+# Loading work.branch_comp
+# Loading work.mux3
+# Loading work.alu
+# Loading work.data_mem
+# Loading work.controller
+# ** Error: (vish-4014) No objects found matching '/processor_tb/a/*'.
+# Error in macro ./run_sim.do line 15
+# (vish-4014) No objects found matching '/processor_tb/a/*'.
+#     while executing
+# "add wave -position insertpoint sim:/processor_tb/a/*"
+
+
+do run_sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:13:46 on Jul 21,2026
+# vlog -reportprogress 300 alu.v branch_comp.v controller.v data_mem.v data_path.v ifu.v imm_gen.v instr_mem.v mux.v mux3.v reg_file.v processor.v ../test_bench/processor_tb.v 
+# -- Compiling module alu
+# -- Compiling module branch_comp
+# -- Compiling module controller
+# -- Compiling module data_mem
+# -- Compiling module data_path
+# -- Compiling module IFU
+# -- Compiling module IMM_GEN
+# -- Compiling module INSTR_MEM
+# -- Compiling module mux
+# -- Compiling module mux3
+# -- Compiling module reg_file
+# -- Compiling module processor
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:13:46 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:13:47 on Jul 21,2026, Elapsed time: 0:02:02
+# Errors: 3, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 16:13:47 on Jul 21,2026
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.data_path
+# Loading work.IFU
+# Loading work.INSTR_MEM
+# Loading work.reg_file
+# Loading work.IMM_GEN
+# Loading work.mux
+# Loading work.branch_comp
+# Loading work.mux3
+# Loading work.alu
+# Loading work.data_mem
+# Loading work.controller
+# ==========================================================================
+#              KHOI CHAY MO PHONG CPU RISC-V 32-BIT (SINGLE-CYCLE)          
+# ==========================================================================
+# [PASS] t=20000 ns | Reset thanh cong. PC bat dau tai 0x00000000.
+# t=20000 ns | PC=0x00000000 | Instr=0x00500093 | ALU_Result=0x00000005 | RegWriteData=0x00000005 | Zero=0
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=30000 ns | PC=0x00000004 | Instr=0x00102023 | ALU_Result=0x00000000 | RegWriteData=0x00000000 | Zero=1
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=40000 ns | PC=0x00000008 | Instr=0x00002103 | ALU_Result=0x00000000 | RegWriteData=0x00000005 | Zero=1
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=50000 ns | PC=0x0000000c | Instr=0x00208463 | ALU_Result=0x00000014 | RegWriteData=0x00000014 | Zero=0
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=60000 ns | PC=0x00000014 | Instr=0x402081b3 | ALU_Result=0x00000000 | RegWriteData=0x00000000 | Zero=1
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=70000 ns | PC=0x00000018 | Instr=0x00000013 | ALU_Result=0x00000000 | RegWriteData=0x00000000 | Zero=1
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=80000 ns | PC=0x0000001c | Instr=0x0080026f | ALU_Result=0x00000024 | RegWriteData=0x00000020 | Zero=0
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=90000 ns | PC=0x00000024 | Instr=0x00700313 | ALU_Result=0x00000007 | RegWriteData=0x00000007 | Zero=0
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=100000 ns | PC=0x00000028 | Instr=0x000203e7 | ALU_Result=0x00000020 | RegWriteData=0x0000002c | Zero=0
+#           | x1(gp)=7 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=110000 ns | PC=0x00000020 | Instr=0x00000013 | ALU_Result=0x00000000 | RegWriteData=0x00000000 | Zero=1
+#           | x1(gp)=44 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# t=120000 ns | PC=0x00000024 | Instr=0x00700313 | ALU_Result=0x00000007 | RegWriteData=0x00000007 | Zero=0
+#           | x1(gp)=44 | x2(sp)=9 | x3(gp2)=8 | x4(tp)=10 | x6(t1)=11 | x7(t2)=12
+# ----------------------------------------------------------------------------------
+# 
+# ==========================================================================
+#              TIEN HANH TU DONG KIEM TRA (SELF-CHECKING VERIFICATION)      
+# ==========================================================================
+# [FAIL] Test Case 1: Lenh ADDI x1, x0, 5 THAT BAI! x1 = 44 (Ky vong: 5)
+# [PASS] Test Case 2: Lenh SW x1, 0(x0) ghi bo nho chinh xac. MEM = 5
+# [FAIL] Test Case 3: Lenh LW x2, 0(x0) THAT BAI! x2 = 9 (Ky vong: 5)
+# [FAIL] Test Case 4: Lenh re nhanh BEQ THAT BAI! x3 = 8 (Ky vong: 0 do thuc hien lenh SUB thay vi ADD)
+# [FAIL] Test Case 5: Lenh nhay lien ket JAL THAT BAI! x4 = 0x0000000a (Ky vong: 0x00000020)
+# [FAIL] Test Case 6: Lenh ADDI x6, x0, 7 THAT BAI! x6 = 11 (Ky vong: 7)
+# [FAIL] Test Case 7: Lenh JALR x7, x4, 0 THAT BAI! x7 = 0x0000000c (Ky vong: 0x0000002c)
+# ==========================================================================
+#     KET QUA: >>> MO PHONG CO LOI (FAILED) <<< (6 loi phat hien)
+# ==========================================================================
+# ** Note: $finish    : ../test_bench/processor_tb.v(146)
+#    Time: 130 ns  Iteration: 0  Instance: /processor_tb
+# 1
+# Break in Module processor_tb at ../test_bench/processor_tb.v line 146
+
+
+
+do run_sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:20:53 on Jul 21,2026
+# vlog -reportprogress 300 alu.v branch_comp.v controller.v data_mem.v data_path.v ifu.v imm_gen.v instr_mem.v mux.v mux3.v reg_file.v processor.v ../test_bench/processor_tb.v 
+# -- Compiling module alu
+# -- Compiling module branch_comp
+# -- Compiling module controller
+# -- Compiling module data_mem
+# -- Compiling module data_path
+# -- Compiling module IFU
+# -- Compiling module IMM_GEN
+# -- Compiling module INSTR_MEM
+# -- Compiling module mux
+# -- Compiling module mux3
+# -- Compiling module reg_file
+# -- Compiling module processor
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 16:20:53 on Jul 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:20:59 on Jul 21,2026, Elapsed time: 0:07:12
+# Errors: 0, Warnings: 0
+# vsim work.processor_tb 
+# Start time: 16:20:59 on Jul 21,2026
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.data_path
+# Loading work.IFU
+# Loading work.INSTR_MEM
+# Loading work.reg_file
+# Loading work.IMM_GEN
+# Loading work.mux
+# Loading work.branch_comp
+# Loading work.mux3
+# Loading work.alu
+# Loading work.data_mem
+# Loading work.controller
+# ==========================================================================
+#              KHOI CHAY MO PHONG CPU RISC-V 32-BIT (SINGLE-CYCLE)          
+# ==========================================================================
+# [PASS] t=20000 ns | Reset thanh cong. PC bat dau tai 0x00000000.
+# t=20000 ns | PC=0x00000000 | Instr=0x00500093 | ALU_Out=0x00000005 | Zero=0
+#           | x1(ra)=1 | x2(sp)=2 | x3(gp)=3
+# ----------------------------------------------------------------------------------
+# t=30000 ns | PC=0x00000004 | Instr=0x00102023 | ALU_Out=0x00000000 | Zero=1
+#           | x1(ra)=5 | x2(sp)=2 | x3(gp)=3
+# ----------------------------------------------------------------------------------
+# t=40000 ns | PC=0x00000008 | Instr=0x00002103 | ALU_Out=0x00000000 | Zero=1
+#           | x1(ra)=5 | x2(sp)=2 | x3(gp)=3
+# ----------------------------------------------------------------------------------
+# t=50000 ns | PC=0x0000000c | Instr=0x00208463 | ALU_Out=0x00000014 | Zero=0
+#           | x1(ra)=5 | x2(sp)=5 | x3(gp)=3
+# ----------------------------------------------------------------------------------
+# t=60000 ns | PC=0x00000014 | Instr=0x402081b3 | ALU_Out=0x00000000 | Zero=1
+#           | x1(ra)=5 | x2(sp)=5 | x3(gp)=3
+# ----------------------------------------------------------------------------------
+# t=70000 ns | PC=0x00000018 | Instr=0x00000013 | ALU_Out=0x00000000 | Zero=1
+#           | x1(ra)=5 | x2(sp)=5 | x3(gp)=0
+# ----------------------------------------------------------------------------------
+# t=80000 ns | PC=0x0000001c | Instr=0x0080026f | ALU_Out=0x00000024 | Zero=0
+#           | x1(ra)=5 | x2(sp)=5 | x3(gp)=0
+# ----------------------------------------------------------------------------------
+# t=90000 ns | PC=0x00000024 | Instr=0x00700313 | ALU_Out=0x00000007 | Zero=0
+#           | x1(ra)=5 | x2(sp)=5 | x3(gp)=0
+# ----------------------------------------------------------------------------------
+# 
+# ==========================================================================
+#              TIEN HANH TU DONG KIEM TRA (CHI TEST I, S, B, R-TYPE)        
+# ==========================================================================
+# [PASS] Test Case 1: Lenh ADDI x1, x0, 5 hoat dong dung. x1 = 5
+# [PASS] Test Case 2: Lenh SW x1, 0(x0) ghi bo nho dung. MEM[0] = 5
+# [PASS] Test Case 3: Lenh LW x2, 0(x0) nap du lieu dung. x2 = 5
+# [PASS] Test Case 4: Lenh re nhanh BEQ hoat dong dung. x3 = 0
+# ==========================================================================
+#     KET QUA: >>> MO PHONG THANH CONG (PASSED) <<< (5/5 test cases)
+# ==========================================================================
+# ** Note: $finish    : ../test_bench/processor_tb.v(105)
+#    Time: 100 ns  Iteration: 0  Instance: /processor_tb
+# 1
+# Break in Module processor_tb at ../test_bench/processor_tb.v line 105
+# End time: 16:44:36 on Jul 21,2026, Elapsed time: 0:23:37
+# Errors: 0, Warnings: 0
