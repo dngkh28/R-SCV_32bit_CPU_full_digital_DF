@@ -1,0 +1,177 @@
+Chuẩn bị (luôn làm trước, mỗi khi mở terminal mới):
+source /home/thu/openlane2/venv/bin/activate
+cd /home/thu/openlane2
+
+===============================================================
+Cách chạy dừng ở 1 bước (chạy từ đầu):
+===============================================================
+openlane --dockerized \
+  --run-tag stage_by_stage \
+  -T OpenROAD.Floorplan \
+  designs/cpu_riscv/config.json
+
+Flow sẽ chạy từ đầu (Lint -> Synthesis -> Floorplan) và dừng ngay sau bước OpenROAD.Floorplan.
+
+Xem kết quả bước đó bằng OpenROAD GUI:
+read_db designs/cpu_riscv/runs/stage_by_stage/13-openroad-floorplan/processor.odb
+
+===============================================================
+Cách chạy tiếp sang bước kế tiếp (KHÔNG chạy lại từ đầu)
+===============================================================
+LƯU Ý QUAN TRỌNG (rút ra từ thực tế đã chạy):
+Chỉ dùng "-F <bước>" KHÔNG đủ để OpenLane bỏ qua các bước đã chạy trước đó -
+nó có thể chạy lại từ Lint làm số thứ tự thư mục bị đẩy lùi hết.
+=> Phải chỉ định thêm "-i" trỏ thẳng vào state_out.json của bước cuối cùng
+   đã chạy xong, để đảm bảo chỉ chạy đúng (các) bước mới.
+
+Chạy chuỗi : 
+openlane --dockerized --run-tag stage_by_stage -i designs/cpu_riscv/runs/stage_by_stage/13-openroad-floorplan/state_out.json -F Odb.CheckMacroAntennaProperties -T OpenROAD.GlobalPlacement designs/cpu_riscv/config.json
+
+Cú pháp chuẩn (chạy đúng 1 bước tiếp theo):
+openlane --dockerized \
+  --run-tag stage_by_stage \
+  -i designs/cpu_riscv/runs/stage_by_stage/<so-thu-tu>-<ten-buoc-cu>/state_out.json \
+  --only <TenBuocMoi> \
+  designs/cpu_riscv/config.json
+
+Ví dụ thực tế: đã xong Placement (33-openroad-detailedplacement), chạy tiếp CTS:
+openlane --dockerized \
+  --run-tag stage_by_stage \
+  -i designs/cpu_riscv/runs/stage_by_stage/33-openroad-detailedplacement/state_out.json \
+  --only OpenROAD.CTS \
+  designs/cpu_riscv/config.json
+
+"--only X" = viết tắt của "-F X -T X" (chỉ chạy đúng 1 bước X).
+Nếu muốn chạy nhiều bước liên tiếp một lần, dùng "-F <buoc dau> -T <buoc cuoi>"
+(vẫn giữ "-i" trỏ vào state_out.json của bước ngay trước "-F").
+
+SAU MỖI LẦN CHẠY, luôn kiểm tra lại số thứ tự thư mục thật trước khi mở GUI
+(số có thể không như dự đoán nếu có bước nào đó lỡ chạy lại):
+ls /home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/ | sort -V
+
+===============================================================
+Mở OpenROAD GUI để xem từng stage
+===============================================================
+xhost +local:docker
+docker run --rm -it --user 1000:1000 \
+  -v /home/thu:/home/thu \
+  -v /home/thu/.volare:/home/thu/.volare \
+  -e PDK_ROOT=/home/thu/.volare \
+  -w /home/thu/openlane2 \
+  -e DISPLAY=$DISPLAY \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -v /home/thu/.Xauthority:/.Xauthority \
+  --network host --security-opt seccomp=unconfined \
+  ghcr.io/efabless/openlane2:2.3.10 openroad -gui
+
+Trong ô lệnh Tcl (dưới cửa sổ GUI), nạp odb của bước muốn xem:
+read_db designs/cpu_riscv/runs/stage_by_stage/<so-thu-tu>-<ten-buoc>/processor.odb
+
+===============================================================
+Danh sách các stage CHÍNH (để xem trực quan qua GUI)
+===============================================================
+1. Yosys.Synthesis            - tong hop RTL thanh netlist cong logic
+2. OpenROAD.Floorplan         - xac dinh die/core area, dat IO pin
+3. OpenROAD.GlobalPlacement   - dat cell vi tri tho
+4. OpenROAD.DetailedPlacement - dat cell vi tri chinh xac
+5. OpenROAD.CTS               - dung cay phan phoi clock
+6. OpenROAD.GlobalRouting     - dinh tuyen tho (kiem tra congestion)
+7. OpenROAD.DetailedRouting   - dinh tuyen chi tiet day du
+8. Magic.StreamOut / KLayout.StreamOut - xuat file GDSII cuoi cung
+
+===============================================================
+Danh sách đầy đủ 78 bước (Flow Classic) - dùng cho -F/-T/--only
+===============================================================
+ 1. Verilator.Lint
+ 2. Checker.LintTimingConstructs
+ 3. Checker.LintErrors
+ 4. Checker.LintWarnings
+ 5. Yosys.JsonHeader
+ 6. Yosys.Synthesis
+ 7. Checker.YosysUnmappedCells
+ 8. Checker.YosysSynthChecks
+ 9. Checker.NetlistAssignStatements
+10. OpenROAD.CheckSDCFiles
+11. OpenROAD.CheckMacroInstances
+12. OpenROAD.STAPrePNR
+13. OpenROAD.Floorplan
+14. Odb.CheckMacroAntennaProperties
+15. Odb.SetPowerConnections
+16. Odb.ManualMacroPlacement
+17. OpenROAD.CutRows
+18. OpenROAD.TapEndcapInsertion
+19. Odb.AddPDNObstructions
+20. OpenROAD.GeneratePDN
+21. Odb.RemovePDNObstructions
+22. Odb.AddRoutingObstructions
+23. OpenROAD.GlobalPlacementSkipIO
+24. OpenROAD.IOPlacement
+25. Odb.CustomIOPlacement
+26. Odb.ApplyDEFTemplate
+27. OpenROAD.GlobalPlacement
+28. Odb.WriteVerilogHeader
+29. Checker.PowerGridViolations
+30. OpenROAD.STAMidPNR
+31. OpenROAD.RepairDesignPostGPL
+32. Odb.ManualGlobalPlacement
+33. OpenROAD.DetailedPlacement
+34. OpenROAD.CTS
+35. OpenROAD.STAMidPNR-1
+36. OpenROAD.ResizerTimingPostCTS
+37. OpenROAD.STAMidPNR-2
+38. OpenROAD.GlobalRouting
+39. OpenROAD.CheckAntennas
+40. OpenROAD.RepairDesignPostGRT
+41. Odb.DiodesOnPorts
+42. Odb.HeuristicDiodeInsertion
+43. OpenROAD.RepairAntennas
+44. OpenROAD.ResizerTimingPostGRT
+45. OpenROAD.STAMidPNR-3
+46. OpenROAD.DetailedRouting
+47. Odb.RemoveRoutingObstructions
+48. OpenROAD.CheckAntennas-1
+49. Checker.TrDRC
+50. Odb.ReportDisconnectedPins
+51. Checker.DisconnectedPins
+52. Odb.ReportWireLength
+53. Checker.WireLength
+54. OpenROAD.FillInsertion
+55. Odb.CellFrequencyTables
+56. OpenROAD.RCX
+57. OpenROAD.STAPostPNR
+58. OpenROAD.IRDropReport
+59. Magic.StreamOut
+60. KLayout.StreamOut
+61. Magic.WriteLEF
+62. Odb.CheckDesignAntennaProperties
+63. KLayout.XOR
+64. Checker.XOR
+65. Magic.DRC
+66. KLayout.DRC
+67. Checker.MagicDRC
+68. Checker.KLayoutDRC
+69. Magic.SpiceExtraction
+70. Checker.IllegalOverlap
+71. Netgen.LVS
+72. Checker.LVS
+73. Yosys.EQY
+74. Checker.SetupViolations
+75. Checker.HoldViolations
+76. Checker.MaxSlewViolations
+77. Checker.MaxCapViolations
+78. Misc.ReportManufacturability
+
+
+  Sau đó làm theo hướng dẫn dùng screen:
+  
+  screen -S route
+  
+  Rồi bên trong phiên screen mới mở, chạy:
+  
+  openlane --dockerized --run-tag stage_by_stage -i
+  designs/cpu_riscv/runs/stage_by_stage/42-openroad-stamidpnr-3/state_out.json
+  -F OpenROAD.DetailedRouting designs/cpu_riscv/config.json
+
+  Khi muốn thoát ra ngoài mà không tắt tiến trình: Ctrl+A rồi D (detach). Quay
+  lại xem sau bằng screen -r route.
+

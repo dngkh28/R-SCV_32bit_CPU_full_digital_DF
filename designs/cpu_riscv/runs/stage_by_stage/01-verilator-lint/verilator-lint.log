@@ -1,0 +1,37 @@
+%Warning-UNUSEDSIGNAL: /home/thu/openlane2/designs/cpu_riscv/src/controller.v:2:13: Bits of signal are not used: 'instr'[24:15,11:7]
+                                                                                  : ... note: In instance 'processor.con'
+    2 | input [31:0]instr,
+      |             ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.018
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/thu/openlane2/designs/cpu_riscv/src/data_path.v:33:12: Signal is not driven, nor used: 'pc_jalr'
+                                                                                  : ... note: In instance 'processor.dp'
+   33 | wire [31:0]pc_jalr;
+      |            ^~~~~~~
+%Warning-UNUSEDSIGNAL: /home/thu/openlane2/designs/cpu_riscv/src/IFU.v:4:22: Bits of signal are not used: 'pc_jalr'[0]
+                                                                           : ... note: In instance 'processor.dp.ifu'
+    4 | input [31:0]pc_bran, pc_jalr;
+      |                      ^~~~~~~
+%Warning-UNUSEDSIGNAL: /home/thu/openlane2/designs/cpu_riscv/src/IMM_GEN.v:2:13: Bits of signal are not used: 'instr'[6:0]
+                                                                               : ... note: In instance 'processor.dp.geni'
+    2 | input [31:0]instr, 
+      |             ^~~~~
+%Warning-UNUSEDPARAM: /home/thu/openlane2/designs/cpu_riscv/src/IMM_GEN.v:9:11: Parameter is not used: 'U_TYPE'
+                                                                              : ... note: In instance 'processor.dp.geni'
+    9 | parameter U_TYPE = 3'b011;
+      |           ^~~~~~
+%Warning-UNUSEDSIGNAL: /home/thu/openlane2/designs/cpu_riscv/src/INSTR_MEM.v:2:13: Bits of signal are not used: 'PC'[31:6,1:0]
+                                                                                 : ... note: In instance 'processor.dp.ifu.instr_mem'
+    2 | input [31:0]PC;
+      |             ^~
+%Warning-UNUSEDSIGNAL: /home/thu/openlane2/designs/cpu_riscv/src/INSTR_MEM.v:3:7: Signal is not used: 'reset'
+                                                                                : ... note: In instance 'processor.dp.ifu.instr_mem'
+    3 | input reset;
+      |       ^~~~~
+%Warning-CASEINCOMPLETE: /home/thu/openlane2/designs/cpu_riscv/src/controller.v:67:4: Case values incompletely covered (example pattern 0x2)
+   67 |    case(instr[14:12])
+      |    ^~~~
+%Warning-BLKSEQ: /home/thu/openlane2/designs/cpu_riscv/src/data_mem.v:50:20: Blocking assignment '=' in sequential logic process
+                                                                           : ... Suggest using delayed assignment '<='
+   50 |             mem[i] = i[7:0];
+      |                    ^

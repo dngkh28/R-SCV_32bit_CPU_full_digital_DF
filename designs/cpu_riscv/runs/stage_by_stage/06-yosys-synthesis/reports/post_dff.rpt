@@ -1,0 +1,41 @@
+168. Printing statistics.
+
+=== processor ===
+
+   Number of wires:              20456
+   Number of wire bits:          21941
+   Number of public wires:         150
+   Number of public wire bits:    1635
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              21939
+     $_ANDNOT_                    5226
+     $_AND_                         41
+     $_MUX_                       6994
+     $_NAND_                       172
+     $_NOR_                        320
+     $_NOT_                       1688
+     $_ORNOT_                      127
+     $_OR_                        5612
+     $_XNOR_                        58
+     $_XOR_                        133
+     sky130_fd_sc_hd__dfrtp_2     1088
+     sky130_fd_sc_hd__dfstp_2      480
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\processor': 41199.513600
+     of which used for sequential elements: 41199.513600 (100.00%)
+

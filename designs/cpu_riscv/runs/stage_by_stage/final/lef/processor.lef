@@ -1,0 +1,178 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO processor
+  CLASS BLOCK ;
+  FOREIGN processor ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 829.870 BY 840.590 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.340 10.640 25.940 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 177.940 10.640 179.540 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 331.540 10.640 333.140 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 485.140 10.640 486.740 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 638.740 10.640 640.340 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 792.340 10.640 793.940 829.840 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 30.030 824.560 31.630 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 183.210 824.560 184.810 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 336.390 824.560 337.990 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 489.570 824.560 491.170 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 642.750 824.560 644.350 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 795.930 824.560 797.530 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 174.640 10.640 176.240 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 328.240 10.640 329.840 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 481.840 10.640 483.440 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 635.440 10.640 637.040 829.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 789.040 10.640 790.640 829.840 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 26.730 824.560 28.330 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 179.910 824.560 181.510 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 333.090 824.560 334.690 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 486.270 824.560 487.870 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 639.450 824.560 641.050 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 792.630 824.560 794.230 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 1.286700 ;
+    ANTENNADIFFAREA 0.434700 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 748.040 4.000 748.640 ;
+    END
+  END clk
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 825.870 105.440 829.870 106.040 ;
+    END
+  END reset
+  PIN zero
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.336500 ;
+    PORT
+      LAYER met3 ;
+        RECT 825.870 445.440 829.870 446.040 ;
+    END
+  END zero
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 824.510 829.790 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 824.320 829.685 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 824.620 829.840 ;
+      LAYER met2 ;
+        RECT 0.550 10.695 822.850 829.785 ;
+      LAYER met3 ;
+        RECT 0.525 749.040 825.870 829.765 ;
+        RECT 4.400 747.640 825.870 749.040 ;
+        RECT 0.525 446.440 825.870 747.640 ;
+        RECT 0.525 445.040 825.470 446.440 ;
+        RECT 0.525 106.440 825.870 445.040 ;
+        RECT 0.525 105.040 825.470 106.440 ;
+        RECT 0.525 10.715 825.870 105.040 ;
+      LAYER met4 ;
+        RECT 77.575 39.615 174.240 700.225 ;
+        RECT 176.640 39.615 177.540 700.225 ;
+        RECT 179.940 39.615 327.840 700.225 ;
+        RECT 330.240 39.615 331.140 700.225 ;
+        RECT 333.540 39.615 481.440 700.225 ;
+        RECT 483.840 39.615 484.740 700.225 ;
+        RECT 487.140 39.615 635.040 700.225 ;
+        RECT 637.440 39.615 638.340 700.225 ;
+        RECT 640.740 39.615 788.640 700.225 ;
+        RECT 791.040 39.615 791.825 700.225 ;
+      LAYER met5 ;
+        RECT 102.700 492.770 693.100 546.500 ;
+        RECT 102.700 339.590 693.100 484.670 ;
+        RECT 102.700 186.410 693.100 331.490 ;
+        RECT 102.700 174.300 693.100 178.310 ;
+  END
+END processor
+END LIBRARY
+
