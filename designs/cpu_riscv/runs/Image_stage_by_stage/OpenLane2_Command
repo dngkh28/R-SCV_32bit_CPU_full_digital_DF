@@ -1,0 +1,40 @@
+ source /home/thu/openlane2/venv/bin/activate
+
+Mo gui 
+  xhost +local:docker
+  docker run --rm -it --user 1000:1000 \
+    -v /home/thu:/home/thu \
+    -v /home/thu/.volare:/home/thu/.volare \
+    -e PDK_ROOT=/home/thu/.volare \
+    -w /home/thu/openlane2 \
+    -e DISPLAY=$DISPLAY \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -v /home/thu/.Xauthority:/.Xauthority \
+    --network host --security-opt seccomp=unconfined
+    ghcr.io/efabless/openlane2:2.3.10 openroad -gui
+
+Cách chạy dừng ở 1 bước:
+openlane --dockerized --docker-no-tty \
+  --run-tag stage_by_stage \
+  -T OpenROAD.Floorplan \
+  designs/cpu_riscv/config.json
+Flow sẽ chạy từ đầu và dừng ngay sau bước OpenROAD.Floorplan.
+
+Xem kết quả của bước đó: mở ODB vừa tạo bằng OpenROAD GUI (đã hướng dẫn cách mở GUI ở trên):
+read_db designs/cpu_riscv/runs/stage_by_stage/13-openroad-floorplan/processor.odb
+
+Tiếp tục sang bước kế tiếp (không chạy lại từ đầu):
+openlane --dockerized --docker-no-tty \
+  --run-tag stage_by_stage \
+  -F OpenROAD.DetailedPlacement -T OpenROAD.CTS \
+  designs/cpu_riscv/config.json
+Vì cùng --run-tag, OpenLane tự lấy state_out.json của bước cuối đã chạy (OpenROAD.DetailedPlacement... thật ra ở đây nó cần chạy
+placement trước, xem chú ý dưới) làm điểm bắt đầu.
+
+Cứ lặp lại kiểu này cho từng cặp -F <bước trước> -T <bước muốn dừng> để đi qua Placement → CTS → GlobalRouting → DetailedRouting
+→ StreamOut, mở GUI xem sau mỗi bước.
+                                                  
+  Lưu ý: một vài bước phụ trợ (checker, ODB obstruction...) nằm giữa các bước chính trong danh sách 78 bước — nếu bạn dùng đúng ID
+  bước chính làm mốc -T, OpenLane vẫn tự chạy hết các bước phụ trợ ở giữa, không bị bỏ sót.
+                                                    Jump to bottom (ctrl+End) ↓  
+
