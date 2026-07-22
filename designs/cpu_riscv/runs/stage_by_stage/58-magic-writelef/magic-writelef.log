@@ -1,0 +1,1000 @@
+
+Magic 8.3 revision 489 - Compiled on Thu Aug 22 13:45:15 UTC 2024.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/magic/wrapper.tcl" from command line.
+> lef read /home/thu/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+Reading LEF data from file /home/thu/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 82 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 83 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 116 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 118 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 119 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 125 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 126 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 127 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 160 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 173 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 214 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 215 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 255 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 256 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 257 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 295 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 801 lines.
+> gds read /home/thu/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: sky130_fd_sc_hd
+Reading "sky130_fd_sc_hd__or4bb_4".
+Reading "sky130_fd_sc_hd__probe_p_8".
+Reading "sky130_fd_sc_hd__probec_p_8".
+Reading "sky130_fd_sc_hd__sdfbbn_1".
+Reading "sky130_fd_sc_hd__sdfsbp_2".
+Reading "sky130_fd_sc_hd__sdfsbp_1".
+Reading "sky130_fd_sc_hd__sdfrtp_4".
+Reading "sky130_fd_sc_hd__sdfrtp_2".
+Reading "sky130_fd_sc_hd__sdfrtp_1".
+Reading "sky130_fd_sc_hd__sdfrtn_1".
+Reading "sky130_fd_sc_hd__sdfrbp_2".
+Reading "sky130_fd_sc_hd__sdfrbp_1".
+Reading "sky130_fd_sc_hd__sdfbbp_1".
+Reading "sky130_fd_sc_hd__sdfbbn_2".
+Reading "sky130_fd_sc_hd__sdfstp_1".
+Reading "sky130_fd_sc_hd__sdfstp_2".
+Reading "sky130_fd_sc_hd__sdfstp_4".
+Reading "sky130_fd_sc_hd__sdfxbp_1".
+Reading "sky130_fd_sc_hd__sdfxbp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_1".
+Reading "sky130_fd_sc_hd__sdfxtp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_4".
+Reading "sky130_fd_sc_hd__sdlclkp_1".
+Reading "sky130_fd_sc_hd__sdlclkp_2".
+Reading "sky130_fd_sc_hd__sdlclkp_4".
+Reading "sky130_fd_sc_hd__sedfxbp_1".
+Reading "sky130_fd_sc_hd__sedfxbp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_1".
+Reading "sky130_fd_sc_hd__sedfxtp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_4".
+Reading "sky130_fd_sc_hd__tap_1".
+Reading "sky130_fd_sc_hd__tap_2".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__xnor3_4".
+Reading "sky130_fd_sc_hd__xnor3_2".
+Reading "sky130_fd_sc_hd__xnor3_1".
+Reading "sky130_fd_sc_hd__xnor2_4".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd2_1".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__xor2_4".
+Reading "sky130_fd_sc_hd__xor3_1".
+Reading "sky130_fd_sc_hd__xor3_2".
+Reading "sky130_fd_sc_hd__xor3_4".
+Reading "sky130_fd_sc_hd__o41a_4".
+Reading "sky130_fd_sc_hd__o41ai_1".
+Reading "sky130_fd_sc_hd__o41ai_2".
+Reading "sky130_fd_sc_hd__o41ai_4".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__o211a_2".
+Reading "sky130_fd_sc_hd__o211a_4".
+Reading "sky130_fd_sc_hd__o211ai_1".
+Reading "sky130_fd_sc_hd__o211ai_2".
+Reading "sky130_fd_sc_hd__o211ai_4".
+Reading "sky130_fd_sc_hd__o221a_1".
+Reading "sky130_fd_sc_hd__o221a_2".
+Reading "sky130_fd_sc_hd__o221a_4".
+Reading "sky130_fd_sc_hd__o221ai_1".
+Reading "sky130_fd_sc_hd__o221ai_2".
+Reading "sky130_fd_sc_hd__o221ai_4".
+Reading "sky130_fd_sc_hd__o2111a_4".
+Reading "sky130_fd_sc_hd__o2111a_2".
+Reading "sky130_fd_sc_hd__o2111a_1".
+Reading "sky130_fd_sc_hd__o311ai_4".
+Reading "sky130_fd_sc_hd__o311ai_2".
+Reading "sky130_fd_sc_hd__o311ai_1".
+Reading "sky130_fd_sc_hd__o311ai_0".
+Reading "sky130_fd_sc_hd__o311a_4".
+Reading "sky130_fd_sc_hd__o311a_2".
+Reading "sky130_fd_sc_hd__o311a_1".
+Reading "sky130_fd_sc_hd__o2111ai_1".
+Reading "sky130_fd_sc_hd__o2111ai_2".
+Reading "sky130_fd_sc_hd__o2111ai_4".
+Reading "sky130_fd_sc_hd__or2_0".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__or2_2".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__or2b_1".
+Reading "sky130_fd_sc_hd__or2b_2".
+Reading "sky130_fd_sc_hd__or2b_4".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__or3_2".
+Reading "sky130_fd_sc_hd__or3_4".
+Reading "sky130_fd_sc_hd__or3b_1".
+Reading "sky130_fd_sc_hd__or3b_2".
+Reading "sky130_fd_sc_hd__or3b_4".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__or4_2".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__or4b_1".
+Reading "sky130_fd_sc_hd__or4b_2".
+Reading "sky130_fd_sc_hd__or4b_4".
+Reading "sky130_fd_sc_hd__or4bb_1".
+Reading "sky130_fd_sc_hd__or4bb_2".
+Reading "sky130_fd_sc_hd__nor3b_2".
+Reading "sky130_fd_sc_hd__nor3b_4".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__nor4_2".
+Reading "sky130_fd_sc_hd__nor4_4".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__nor4b_2".
+Reading "sky130_fd_sc_hd__nor4b_4".
+Reading "sky130_fd_sc_hd__nor4bb_1".
+Reading "sky130_fd_sc_hd__nor4bb_2".
+Reading "sky130_fd_sc_hd__nor4bb_4".
+Moving label "k" from mvpsubdiff to ndiff in cell sky130_fd_sc_hd__nor4bb_4.
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__o2bb2a_2".
+Reading "sky130_fd_sc_hd__o2bb2a_4".
+Reading "sky130_fd_sc_hd__o2bb2ai_1".
+Reading "sky130_fd_sc_hd__o2bb2ai_2".
+Reading "sky130_fd_sc_hd__o2bb2ai_4".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__o21a_2".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__o21ai_0".
+Reading "sky130_fd_sc_hd__o21a_4".
+Reading "sky130_fd_sc_hd__o21ba_2".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__o21bai_2".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__o21ba_4".
+Reading "sky130_fd_sc_hd__o21bai_4".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__o22a_2".
+Reading "sky130_fd_sc_hd__o22a_4".
+Reading "sky130_fd_sc_hd__o22ai_1".
+Reading "sky130_fd_sc_hd__o22ai_2".
+Reading "sky130_fd_sc_hd__o22ai_4".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__o31a_2".
+Reading "sky130_fd_sc_hd__o31a_4".
+Reading "sky130_fd_sc_hd__o31ai_1".
+Reading "sky130_fd_sc_hd__o31ai_2".
+Reading "sky130_fd_sc_hd__o31ai_4".
+Reading "sky130_fd_sc_hd__o32a_1".
+Reading "sky130_fd_sc_hd__o32a_2".
+Reading "sky130_fd_sc_hd__o32a_4".
+Reading "sky130_fd_sc_hd__o32ai_1".
+Reading "sky130_fd_sc_hd__o32ai_2".
+Reading "sky130_fd_sc_hd__o32ai_4".
+Reading "sky130_fd_sc_hd__o41a_1".
+Reading "sky130_fd_sc_hd__o41a_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "sky130_fd_sc_hd__macro_sparecell".
+Reading "sky130_fd_sc_hd__maj3_1".
+Reading "sky130_fd_sc_hd__maj3_2".
+Reading "sky130_fd_sc_hd__maj3_4".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__mux2_2".
+Reading "sky130_fd_sc_hd__mux2_4".
+Reading "sky130_fd_sc_hd__mux2_8".
+Reading "sky130_fd_sc_hd__mux2i_1".
+Reading "sky130_fd_sc_hd__mux2i_2".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__nand2_4".
+Reading "sky130_fd_sc_hd__nand2_8".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__mux2i_4".
+Reading "sky130_fd_sc_hd__mux4_1".
+Reading "sky130_fd_sc_hd__mux4_2".
+Reading "sky130_fd_sc_hd__mux4_4".
+Reading "sky130_fd_sc_hd__nand2b_2".
+Reading "sky130_fd_sc_hd__nand2b_4".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__nand3_2".
+Reading "sky130_fd_sc_hd__nand3_4".
+Reading "sky130_fd_sc_hd__nand3b_1".
+Reading "sky130_fd_sc_hd__nand3b_2".
+Reading "sky130_fd_sc_hd__nand3b_4".
+Reading "sky130_fd_sc_hd__nand4_1".
+Reading "sky130_fd_sc_hd__nand4_2".
+Reading "sky130_fd_sc_hd__nand4_4".
+Reading "sky130_fd_sc_hd__nand4b_1".
+Reading "sky130_fd_sc_hd__nand4b_2".
+Reading "sky130_fd_sc_hd__nand4b_4".
+Reading "sky130_fd_sc_hd__nand4bb_1".
+Reading "sky130_fd_sc_hd__nand4bb_2".
+Reading "sky130_fd_sc_hd__nand4bb_4".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__nor2_8".
+Reading "sky130_fd_sc_hd__nor2b_1".
+Reading "sky130_fd_sc_hd__nor2b_2".
+Reading "sky130_fd_sc_hd__nor2b_4".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__nor3_2".
+Reading "sky130_fd_sc_hd__nor3_4".
+Reading "sky130_fd_sc_hd__nor3b_1".
+Reading "sky130_fd_sc_hd__einvp_1".
+Reading "sky130_fd_sc_hd__einvp_2".
+Reading "sky130_fd_sc_hd__einvp_4".
+Reading "sky130_fd_sc_hd__einvp_8".
+Reading "sky130_fd_sc_hd__fa_1".
+Reading "sky130_fd_sc_hd__fa_2".
+Reading "sky130_fd_sc_hd__fa_4".
+Reading "sky130_fd_sc_hd__fah_1".
+Reading "sky130_fd_sc_hd__fahcin_1".
+Reading "sky130_fd_sc_hd__fahcon_1".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__fill_4".
+Reading "sky130_fd_sc_hd__fill_8".
+Reading "sky130_fd_sc_hd__ha_1".
+Reading "sky130_fd_sc_hd__ha_2".
+Reading "sky130_fd_sc_hd__ha_4".
+Reading "sky130_fd_sc_hd__inv_1".
+Reading "sky130_fd_sc_hd__inv_16".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_bleeder_1".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_3".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_6".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0n_1".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_12".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_inputisolatch_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1p_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1n_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0p_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_4".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_2".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_8".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_16".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrckapwr_16".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__dfsbp_1".
+Reading "sky130_fd_sc_hd__dfsbp_2".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__dfstp_2".
+Reading "sky130_fd_sc_hd__dfstp_4".
+Reading "sky130_fd_sc_hd__dfxbp_1".
+Reading "sky130_fd_sc_hd__dfxbp_2".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__dfxtp_2".
+Reading "sky130_fd_sc_hd__dfxtp_4".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__dlclkp_1".
+Reading "sky130_fd_sc_hd__dlclkp_2".
+Reading "sky130_fd_sc_hd__dlclkp_4".
+Reading "sky130_fd_sc_hd__dlrbn_1".
+Reading "sky130_fd_sc_hd__dlrbp_1".
+Reading "sky130_fd_sc_hd__dlrtn_1".
+Reading "sky130_fd_sc_hd__dlrtn_2".
+Reading "sky130_fd_sc_hd__dlrbn_2".
+Reading "sky130_fd_sc_hd__dlrbp_2".
+Reading "sky130_fd_sc_hd__dlrtn_4".
+Reading "sky130_fd_sc_hd__dlrtp_1".
+Reading "sky130_fd_sc_hd__dlrtp_2".
+Reading "sky130_fd_sc_hd__dlrtp_4".
+Reading "sky130_fd_sc_hd__dlxbn_1".
+Reading "sky130_fd_sc_hd__dlxbn_2".
+Reading "sky130_fd_sc_hd__dlxbp_1".
+Reading "sky130_fd_sc_hd__dlxtn_1".
+Reading "sky130_fd_sc_hd__dlxtn_2".
+Reading "sky130_fd_sc_hd__dlxtn_4".
+Reading "sky130_fd_sc_hd__dlxtp_1".
+Reading "sky130_fd_sc_hd__dlygate4sd1_1".
+Reading "sky130_fd_sc_hd__dlygate4sd2_1".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s4s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s6s_1".
+Reading "sky130_fd_sc_hd__ebufn_1".
+Reading "sky130_fd_sc_hd__ebufn_2".
+Reading "sky130_fd_sc_hd__ebufn_4".
+Reading "sky130_fd_sc_hd__einvn_0".
+Reading "sky130_fd_sc_hd__einvn_1".
+Reading "sky130_fd_sc_hd__einvn_2".
+Reading "sky130_fd_sc_hd__einvn_4".
+Reading "sky130_fd_sc_hd__ebufn_8".
+Reading "sky130_fd_sc_hd__edfxbp_1".
+Reading "sky130_fd_sc_hd__edfxtp_1".
+Reading "sky130_fd_sc_hd__einvn_8".
+Reading "sky130_fd_sc_hd__and4_4".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__and4b_2".
+Reading "sky130_fd_sc_hd__and4b_4".
+Reading "sky130_fd_sc_hd__and4bb_1".
+Reading "sky130_fd_sc_hd__and4bb_2".
+Reading "sky130_fd_sc_hd__and4bb_4".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__buf_8".
+Reading "sky130_fd_sc_hd__buf_12".
+Reading "sky130_fd_sc_hd__buf_16".
+Reading "sky130_fd_sc_hd__bufbuf_8".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_1".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__bufinv_16".
+Reading "sky130_fd_sc_hd__bufinv_8".
+Reading "sky130_fd_sc_hd__bufbuf_16".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_2".
+Reading "sky130_fd_sc_hd__clkinv_1".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__dfbbn_1".
+Reading "sky130_fd_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Reading "sky130_fd_sc_hd__clkinvlp_2".
+Reading "sky130_fd_sc_hd__clkinv_16".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__dfbbn_2".
+Reading "sky130_fd_sc_hd__dfbbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_2".
+Reading "sky130_fd_sc_hd__dfrtn_1".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__a32oi_1".
+Reading "sky130_fd_sc_hd__a32oi_2".
+Reading "sky130_fd_sc_hd__a32oi_4".
+Reading "sky130_fd_sc_hd__a41o_1".
+Reading "sky130_fd_sc_hd__a41o_2".
+Reading "sky130_fd_sc_hd__a41o_4".
+Reading "sky130_fd_sc_hd__a41oi_1".
+Reading "sky130_fd_sc_hd__a41oi_2".
+Reading "sky130_fd_sc_hd__a41oi_4".
+Reading "sky130_fd_sc_hd__a221o_4".
+Reading "sky130_fd_sc_hd__a221o_2".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__a211oi_2".
+Reading "sky130_fd_sc_hd__a211oi_1".
+Reading "sky130_fd_sc_hd__a211o_4".
+Reading "sky130_fd_sc_hd__a211o_2".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__a211oi_4".
+Reading "sky130_fd_sc_hd__a221oi_2".
+Reading "sky130_fd_sc_hd__a221oi_4".
+Reading "sky130_fd_sc_hd__a222oi_1".
+Reading "sky130_fd_sc_hd__a311o_1".
+Reading "sky130_fd_sc_hd__a311o_2".
+Reading "sky130_fd_sc_hd__a311o_4".
+Reading "sky130_fd_sc_hd__a311oi_1".
+Reading "sky130_fd_sc_hd__a311oi_2".
+Reading "sky130_fd_sc_hd__a311oi_4".
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__a2111o_2".
+Reading "sky130_fd_sc_hd__a2111o_4".
+Reading "sky130_fd_sc_hd__a2111oi_0".
+Reading "sky130_fd_sc_hd__a2111oi_1".
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "sky130_fd_sc_hd__a2111oi_2".
+Reading "sky130_fd_sc_hd__a2111oi_4".
+Reading "sky130_fd_sc_hd__and2_0".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__and2b_4".
+Reading "sky130_fd_sc_hd__and2b_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__and3b_2".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__and3b_4".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__and4_2".
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_ef_sc_hd__fill_4".
+Reading "sky130_ef_sc_hd__fill_8".
+Reading "sky130_ef_sc_hd__fill_12".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Reading "sky130_fd_sc_hd__a2bb2o_4".
+Reading "sky130_fd_sc_hd__a2bb2oi_1".
+Reading "sky130_fd_sc_hd__a2bb2oi_2".
+Reading "sky130_fd_sc_hd__a2bb2oi_4".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__a21bo_4".
+Reading "sky130_fd_sc_hd__a21boi_0".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__a21boi_4".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__a21o_2".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__a21oi_4".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__a22oi_2".
+Reading "sky130_fd_sc_hd__a22oi_1".
+Reading "sky130_fd_sc_hd__a22o_4".
+Reading "sky130_fd_sc_hd__a22o_2".
+Reading "sky130_fd_sc_hd__a22oi_4".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__a21o_4".
+Reading "sky130_fd_sc_hd__a31o_1".
+Reading "sky130_fd_sc_hd__a31o_2".
+Reading "sky130_fd_sc_hd__a31o_4".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__a31oi_2".
+Reading "sky130_fd_sc_hd__a31oi_4".
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__a32o_2".
+Reading "sky130_fd_sc_hd__a32o_4".
+Cell (REFRESHLAYOUT?) couldn't be read
+No such file or directory
+Creating new cell
+> def read /home/thu/openlane2/designs/cpu_riscv/runs/RUN_2026-07-14_03-15-21/52-odb-cellfrequencytables/processor.def -noblockage -labels
+Reading DEF data from file /home/thu/openlane2/designs/cpu_riscv/runs/RUN_2026-07-14_03-15-21/52-odb-cellfrequencytables/processor.def.
+This action cannot be undone.
+  Processed 4 vias total.
+  Processed 78571 subcell instances total.
+  Processed 5 pins total.
+  Processed 2 special nets total.
+  Processed 16124 nets total.
+DEF read: Processed 469538 lines.
+Moving label "_01317_" from metal1 to via1 in cell processor.
+Moving label "_01514_" from metal1 to viali in cell processor.
+Moving label "_01897_" from metal1 to via1 in cell processor.
+Moving label "_01917_" from metal2 to via2 in cell processor.
+Moving label "_02034_" from metal2 to via2 in cell processor.
+Moving label "_02263_" from metal1 to via1 in cell processor.
+Moving label "_02350_" from metal1 to via1 in cell processor.
+Moving label "_02420_" from metal1 to via1 in cell processor.
+Moving label "_02515_" from metal1 to via1 in cell processor.
+Moving label "_02556_" from metal2 to via2 in cell processor.
+Moving label "_02605_" from metal1 to viali in cell processor.
+Moving label "_02685_" from metal1 to via1 in cell processor.
+Moving label "_02700_" from metal2 to via2 in cell processor.
+Moving label "_02762_" from metal2 to via2 in cell processor.
+Moving label "_02798_" from metal1 to viali in cell processor.
+Moving label "_02804_" from metal3 to via2 in cell processor.
+Moving label "_02862_" from metal2 to via2 in cell processor.
+Moving label "_02919_" from metal1 to viali in cell processor.
+Moving label "_02943_" from metal1 to viali in cell processor.
+Moving label "_02978_" from metal2 to via2 in cell processor.
+Moving label "_02984_" from metal1 to viali in cell processor.
+Moving label "_03029_" from metal1 to viali in cell processor.
+Moving label "_03045_" from metal1 to viali in cell processor.
+Moving label "_03048_" from metal1 to viali in cell processor.
+Moving label "_03080_" from metal1 to viali in cell processor.
+Moving label "_03097_" from metal1 to viali in cell processor.
+Moving label "_03133_" from metal2 to via2 in cell processor.
+Moving label "_03144_" from metal1 to viali in cell processor.
+Moving label "_03146_" from metal1 to viali in cell processor.
+Moving label "_03147_" from metal1 to viali in cell processor.
+Moving label "_03164_" from metal1 to viali in cell processor.
+Moving label "_03169_" from metal1 to viali in cell processor.
+Moving label "_03183_" from metal1 to viali in cell processor.
+Moving label "_03300_" from metal1 to viali in cell processor.
+Moving label "_03338_" from metal2 to via2 in cell processor.
+Moving label "_03354_" from metal1 to viali in cell processor.
+Moving label "_03455_" from metal1 to via1 in cell processor.
+Moving label "_03470_" from metal1 to viali in cell processor.
+Moving label "_03483_" from metal1 to viali in cell processor.
+Moving label "_03516_" from metal2 to via2 in cell processor.
+Moving label "_03534_" from metal1 to viali in cell processor.
+Moving label "_03582_" from metal1 to viali in cell processor.
+Moving label "_03602_" from metal1 to viali in cell processor.
+Moving label "_03637_" from metal2 to via2 in cell processor.
+Moving label "_03641_" from metal1 to via1 in cell processor.
+Moving label "_03657_" from metal1 to viali in cell processor.
+Moving label "_03658_" from metal1 to viali in cell processor.
+Moving label "_03667_" from metal1 to viali in cell processor.
+Moving label "_03718_" from metal1 to viali in cell processor.
+Moving label "_03727_" from metal1 to viali in cell processor.
+Moving label "_03736_" from metal1 to viali in cell processor.
+Moving label "_03737_" from metal2 to via2 in cell processor.
+Moving label "_03882_" from metal1 to viali in cell processor.
+Moving label "_03902_" from metal2 to via2 in cell processor.
+Moving label "_03973_" from metal1 to viali in cell processor.
+Moving label "_04027_" from metal1 to viali in cell processor.
+Moving label "_04073_" from metal1 to viali in cell processor.
+Moving label "_04088_" from metal1 to viali in cell processor.
+Moving label "_04103_" from metal1 to viali in cell processor.
+Moving label "_04192_" from metal1 to viali in cell processor.
+Moving label "_04196_" from metal1 to viali in cell processor.
+Moving label "_04226_" from metal1 to via1 in cell processor.
+Moving label "_04258_" from metal2 to via2 in cell processor.
+Moving label "_04274_" from metal1 to viali in cell processor.
+Moving label "_04282_" from metal1 to viali in cell processor.
+Moving label "_04288_" from metal1 to viali in cell processor.
+Moving label "_04316_" from metal1 to viali in cell processor.
+Moving label "_04324_" from metal1 to viali in cell processor.
+Moving label "_04341_" from metal1 to viali in cell processor.
+Moving label "_04370_" from metal1 to viali in cell processor.
+Moving label "_04422_" from metal1 to via1 in cell processor.
+Moving label "_04439_" from metal1 to via1 in cell processor.
+Moving label "_04472_" from metal1 to via1 in cell processor.
+Moving label "_04522_" from metal2 to via2 in cell processor.
+Moving label "_04572_" from metal2 to via2 in cell processor.
+Moving label "_04694_" from metal2 to via1 in cell processor.
+Moving label "_04792_" from metal1 to viali in cell processor.
+Moving label "_04841_" from metal1 to viali in cell processor.
+Moving label "_04885_" from metal1 to viali in cell processor.
+Moving label "_04948_" from metal1 to via1 in cell processor.
+Moving label "_04951_" from metal1 to viali in cell processor.
+Moving label "_04982_" from metal1 to viali in cell processor.
+Moving label "_05005_" from metal1 to viali in cell processor.
+Moving label "_05051_" from metal1 to viali in cell processor.
+Moving label "_05052_" from metal1 to viali in cell processor.
+Moving label "_05075_" from metal1 to via1 in cell processor.
+Moving label "_05205_" from metal1 to viali in cell processor.
+Moving label "_05349_" from metal1 to viali in cell processor.
+Moving label "_05370_" from metal1 to viali in cell processor.
+Moving label "_05393_" from metal1 to viali in cell processor.
+Moving label "_05394_" from metal1 to via1 in cell processor.
+Moving label "_05429_" from metal1 to viali in cell processor.
+Moving label "_05446_" from metal1 to via1 in cell processor.
+Moving label "_05448_" from metal1 to viali in cell processor.
+Moving label "_05470_" from metal1 to via1 in cell processor.
+Moving label "_05550_" from metal1 to via1 in cell processor.
+Moving label "_05551_" from metal1 to viali in cell processor.
+Moving label "_05559_" from metal1 to viali in cell processor.
+Moving label "_05591_" from metal1 to viali in cell processor.
+Moving label "_05600_" from metal1 to via1 in cell processor.
+Moving label "_05624_" from metal1 to viali in cell processor.
+Moving label "_05630_" from metal1 to viali in cell processor.
+Moving label "_05640_" from metal1 to viali in cell processor.
+Moving label "_05650_" from metal1 to viali in cell processor.
+Moving label "_05669_" from metal2 to via2 in cell processor.
+Moving label "_05689_" from metal1 to viali in cell processor.
+Moving label "_05710_" from metal1 to via1 in cell processor.
+Moving label "_05714_" from metal2 to via2 in cell processor.
+Moving label "_05720_" from metal1 to viali in cell processor.
+Moving label "_05789_" from metal1 to via1 in cell processor.
+Moving label "_05829_" from metal1 to viali in cell processor.
+Moving label "_05832_" from metal1 to viali in cell processor.
+Moving label "_05848_" from metal1 to via1 in cell processor.
+Moving label "_05849_" from metal2 to via2 in cell processor.
+Moving label "_05869_" from metal1 to viali in cell processor.
+Moving label "_05879_" from metal1 to viali in cell processor.
+Moving label "_05893_" from metal1 to viali in cell processor.
+Moving label "_05949_" from metal1 to via1 in cell processor.
+Moving label "_05959_" from metal1 to viali in cell processor.
+Moving label "_05960_" from metal1 to viali in cell processor.
+Moving label "_06013_" from metal1 to viali in cell processor.
+Moving label "_06029_" from metal1 to viali in cell processor.
+Moving label "_06069_" from metal1 to via1 in cell processor.
+Moving label "_06073_" from metal1 to viali in cell processor.
+Moving label "_06083_" from metal1 to via1 in cell processor.
+Moving label "_06109_" from metal1 to viali in cell processor.
+Moving label "_06177_" from metal1 to viali in cell processor.
+Moving label "_06189_" from metal1 to viali in cell processor.
+Moving label "_06199_" from metal1 to viali in cell processor.
+Moving label "_06229_" from metal1 to viali in cell processor.
+Moving label "_06269_" from metal1 to viali in cell processor.
+Moving label "_06284_" from metal1 to viali in cell processor.
+Moving label "_06287_" from metal1 to viali in cell processor.
+Moving label "_06288_" from metal1 to viali in cell processor.
+Moving label "_06309_" from metal1 to via1 in cell processor.
+Moving label "_06317_" from metal1 to viali in cell processor.
+Moving label "_06324_" from metal1 to viali in cell processor.
+Moving label "_06333_" from metal1 to viali in cell processor.
+Moving label "_06346_" from metal2 to via2 in cell processor.
+Moving label "_06389_" from metal1 to viali in cell processor.
+Moving label "_06393_" from metal1 to viali in cell processor.
+Moving label "_06428_" from metal2 to via2 in cell processor.
+Moving label "_06466_" from metal1 to viali in cell processor.
+Moving label "_06469_" from metal1 to viali in cell processor.
+Moving label "_06489_" from metal1 to viali in cell processor.
+Moving label "_06522_" from metal2 to via2 in cell processor.
+Moving label "_06618_" from metal1 to via1 in cell processor.
+Moving label "_06631_" from metal1 to via1 in cell processor.
+Moving label "_06724_" from metal2 to via2 in cell processor.
+Moving label "_06779_" from metal2 to via2 in cell processor.
+Moving label "_06783_" from metal2 to via2 in cell processor.
+Moving label "_06793_" from metal3 to via3 in cell processor.
+Moving label "_06795_" from metal1 to viali in cell processor.
+Moving label "_06831_" from metal2 to via2 in cell processor.
+Moving label "_06847_" from metal3 to via3 in cell processor.
+Moving label "_06858_" from metal3 to via3 in cell processor.
+Moving label "_06878_" from metal2 to via2 in cell processor.
+Moving label "_06884_" from metal3 to via3 in cell processor.
+Moving label "_06900_" from metal2 to via2 in cell processor.
+Moving label "_06913_" from metal2 to via2 in cell processor.
+Moving label "_06952_" from metal3 to via3 in cell processor.
+Moving label "_06981_" from metal2 to via1 in cell processor.
+Moving label "_06989_" from metal2 to via2 in cell processor.
+Moving label "_06995_" from metal2 to via2 in cell processor.
+Moving label "_07074_" from metal2 to via2 in cell processor.
+Moving label "_07076_" from metal3 to via3 in cell processor.
+Moving label "_07085_" from metal2 to via2 in cell processor.
+Moving label "_07095_" from metal3 to via2 in cell processor.
+Moving label "_07108_" from metal2 to via2 in cell processor.
+Moving label "_07110_" from metal2 to via2 in cell processor.
+Moving label "_07113_" from metal2 to via2 in cell processor.
+Moving label "_07188_" from metal2 to via1 in cell processor.
+Moving label "_07282_" from metal1 to viali in cell processor.
+Moving label "_07298_" from metal1 to viali in cell processor.
+Moving label "_07308_" from metal1 to via1 in cell processor.
+Moving label "_07320_" from metal1 to via1 in cell processor.
+Moving label "_07354_" from metal1 to via1 in cell processor.
+Moving label "_07394_" from metal1 to viali in cell processor.
+Moving label "_07561_" from metal1 to viali in cell processor.
+Moving label "_07587_" from metal2 to via1 in cell processor.
+Moving label "_07611_" from metal3 to via3 in cell processor.
+Moving label "_07638_" from metal1 to via1 in cell processor.
+Moving label "_07647_" from metal1 to viali in cell processor.
+Moving label "_07686_" from metal3 to via3 in cell processor.
+Moving label "_07696_" from metal2 to via2 in cell processor.
+Moving label "_07702_" from metal1 to viali in cell processor.
+Moving label "_07718_" from metal1 to viali in cell processor.
+Moving label "_07721_" from metal2 to via2 in cell processor.
+Moving label "_07741_" from metal1 to via1 in cell processor.
+Moving label "_07759_" from metal1 to via1 in cell processor.
+Moving label "_07762_" from metal1 to via1 in cell processor.
+Moving label "_07828_" from metal2 to via1 in cell processor.
+Moving label "_07833_" from metal2 to via1 in cell processor.
+Moving label "_07871_" from metal1 to viali in cell processor.
+Moving label "_07879_" from metal2 to via2 in cell processor.
+Moving label "_07900_" from metal2 to via2 in cell processor.
+Moving label "_07953_" from metal1 to viali in cell processor.
+Moving label "_07956_" from metal2 to via2 in cell processor.
+Moving label "_07957_" from metal1 to via1 in cell processor.
+Moving label "_08019_" from metal2 to via2 in cell processor.
+Moving label "_08037_" from metal1 to viali in cell processor.
+Moving label "_08077_" from metal1 to via1 in cell processor.
+Moving label "_08104_" from metal2 to via2 in cell processor.
+Moving label "_08121_" from metal2 to via2 in cell processor.
+Moving label "_08161_" from metal2 to via2 in cell processor.
+Moving label "_08189_" from metal2 to via2 in cell processor.
+Moving label "_08203_" from metal3 to via3 in cell processor.
+Moving label "_08245_" from metal2 to via2 in cell processor.
+Moving label "_08257_" from metal2 to via2 in cell processor.
+Moving label "_08280_" from metal2 to via2 in cell processor.
+Moving label "_08320_" from metal3 to via2 in cell processor.
+Moving label "_08332_" from metal2 to via2 in cell processor.
+Moving label "_08351_" from metal2 to via2 in cell processor.
+Moving label "_08353_" from metal2 to via2 in cell processor.
+Moving label "_08354_" from metal2 to via2 in cell processor.
+Moving label "_08373_" from metal1 to viali in cell processor.
+Moving label "_08378_" from metal2 to via2 in cell processor.
+Moving label "_08431_" from metal2 to via2 in cell processor.
+Moving label "_08461_" from metal1 to via1 in cell processor.
+Moving label "_08467_" from metal1 to via1 in cell processor.
+Moving label "_08484_" from metal1 to via1 in cell processor.
+Moving label "_08526_" from metal2 to via2 in cell processor.
+Moving label "_08553_" from metal1 to via1 in cell processor.
+Moving label "_08590_" from metal2 to via2 in cell processor.
+Moving label "_08636_" from metal1 to via1 in cell processor.
+Moving label "_08642_" from metal1 to viali in cell processor.
+Moving label "_08687_" from metal3 to via3 in cell processor.
+Moving label "_08703_" from metal2 to via2 in cell processor.
+Moving label "_08704_" from metal2 to via2 in cell processor.
+Moving label "_08710_" from metal3 to via3 in cell processor.
+Moving label "_08762_" from metal2 to via2 in cell processor.
+Moving label "_08764_" from metal2 to via2 in cell processor.
+Moving label "_08780_" from metal1 to via1 in cell processor.
+Moving label "_08871_" from metal3 to via3 in cell processor.
+Moving label "_08882_" from metal1 to viali in cell processor.
+Moving label "_08904_" from metal2 to via2 in cell processor.
+Moving label "_08906_" from metal2 to via2 in cell processor.
+Moving label "_08944_" from metal1 to via1 in cell processor.
+Moving label "_08988_" from metal1 to viali in cell processor.
+Moving label "_08993_" from metal1 to via1 in cell processor.
+Moving label "_08998_" from metal2 to via2 in cell processor.
+Moving label "_09073_" from metal1 to via1 in cell processor.
+Moving label "_09078_" from metal2 to via2 in cell processor.
+Moving label "_09080_" from metal1 to viali in cell processor.
+Moving label "_09095_" from metal3 to via3 in cell processor.
+Moving label "_09117_" from metal3 to via3 in cell processor.
+Moving label "_09157_" from metal2 to via2 in cell processor.
+Moving label "_09162_" from metal2 to via2 in cell processor.
+Moving label "_09185_" from metal2 to via2 in cell processor.
+Moving label "_09232_" from metal2 to via2 in cell processor.
+Moving label "_09275_" from metal1 to viali in cell processor.
+Moving label "_09295_" from metal2 to via2 in cell processor.
+Moving label "_09334_" from metal1 to viali in cell processor.
+Moving label "_09403_" from metal1 to viali in cell processor.
+Moving label "_09505_" from metal1 to viali in cell processor.
+Moving label "_09521_" from metal1 to viali in cell processor.
+Moving label "_09561_" from metal3 to via3 in cell processor.
+Moving label "_09588_" from metal3 to via3 in cell processor.
+Moving label "_09590_" from metal2 to via2 in cell processor.
+Moving label "_09624_" from metal1 to via1 in cell processor.
+Moving label "_09658_" from metal3 to via3 in cell processor.
+Moving label "_09676_" from metal2 to via2 in cell processor.
+Moving label "_09717_" from metal1 to via1 in cell processor.
+Moving label "_09759_" from metal2 to via2 in cell processor.
+Moving label "_09768_" from metal2 to via2 in cell processor.
+Moving label "_09796_" from metal1 to viali in cell processor.
+Moving label "_09828_" from metal1 to viali in cell processor.
+Moving label "_09849_" from metal1 to viali in cell processor.
+Moving label "_09882_" from metal1 to viali in cell processor.
+Moving label "_09933_" from metal2 to via2 in cell processor.
+Moving label "_09953_" from metal3 to via3 in cell processor.
+Moving label "_09988_" from metal2 to via2 in cell processor.
+Moving label "_10002_" from metal2 to via2 in cell processor.
+Moving label "_10065_" from metal3 to via3 in cell processor.
+Moving label "_10076_" from metal2 to via2 in cell processor.
+Moving label "_10159_" from metal2 to via2 in cell processor.
+Moving label "_10227_" from metal1 to viali in cell processor.
+Moving label "_10230_" from metal1 to viali in cell processor.
+Moving label "_10241_" from metal1 to viali in cell processor.
+Moving label "_10253_" from metal1 to viali in cell processor.
+Moving label "_10273_" from metal1 to viali in cell processor.
+Moving label "_10351_" from metal1 to viali in cell processor.
+Moving label "_10377_" from metal1 to via1 in cell processor.
+Moving label "_10444_" from metal2 to via2 in cell processor.
+Moving label "_10472_" from metal1 to viali in cell processor.
+Moving label "_10511_" from metal1 to via1 in cell processor.
+Moving label "_10523_" from metal1 to viali in cell processor.
+Moving label "_10527_" from metal1 to viali in cell processor.
+Moving label "_10545_" from metal1 to viali in cell processor.
+Moving label "_10591_" from metal1 to viali in cell processor.
+Moving label "_10593_" from metal1 to viali in cell processor.
+Moving label "_10669_" from metal1 to viali in cell processor.
+Moving label "_10714_" from metal1 to viali in cell processor.
+Moving label "_10798_" from metal1 to viali in cell processor.
+Moving label "_10818_" from metal1 to viali in cell processor.
+Moving label "_10844_" from metal1 to via1 in cell processor.
+Moving label "_10879_" from metal1 to via1 in cell processor.
+Moving label "_10915_" from metal1 to viali in cell processor.
+Moving label "_10949_" from metal1 to viali in cell processor.
+Moving label "_10953_" from metal1 to viali in cell processor.
+Moving label "_11050_" from metal2 to via2 in cell processor.
+Moving label "_11069_" from metal1 to via1 in cell processor.
+Moving label "_11132_" from metal1 to viali in cell processor.
+Moving label "_11196_" from metal1 to viali in cell processor.
+Moving label "_11216_" from metal1 to viali in cell processor.
+Moving label "_11233_" from metal2 to via1 in cell processor.
+Moving label "_11252_" from metal1 to viali in cell processor.
+Moving label "_11262_" from metal1 to viali in cell processor.
+Moving label "_11292_" from metal1 to via1 in cell processor.
+Moving label "_11388_" from metal1 to via1 in cell processor.
+Moving label "_11398_" from metal1 to viali in cell processor.
+Moving label "clknet_leaf_223_clk" from metal1 to via1 in cell processor.
+Moving label "clknet_leaf_265_clk" from metal2 to via1 in cell processor.
+Moving label "clknet_leaf_57_clk" from metal2 to via1 in cell processor.
+Moving label "dp.dm.mem\[100\]\[4\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[102\]\[3\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[105\]\[1\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[106\]\[2\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[107\]\[3\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[108\]\[1\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[110\]\[6\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[114\]\[0\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[119\]\[7\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[127\]\[0\]" from metal2 to via1 in cell processor.
+Moving label "dp.dm.mem\[13\]\[6\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[14\]\[3\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[21\]\[1\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[22\]\[7\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[29\]\[6\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[2\]\[0\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[32\]\[3\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[32\]\[6\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[35\]\[7\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[37\]\[2\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[37\]\[5\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[38\]\[5\]" from metal3 to via3 in cell processor.
+Moving label "dp.dm.mem\[3\]\[2\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[42\]\[0\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[42\]\[4\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[45\]\[4\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[45\]\[5\]" from metal3 to via3 in cell processor.
+Moving label "dp.dm.mem\[46\]\[3\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[47\]\[5\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[49\]\[1\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[49\]\[7\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[50\]\[0\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[52\]\[1\]" from metal2 to via1 in cell processor.
+Moving label "dp.dm.mem\[52\]\[5\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[53\]\[2\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[55\]\[0\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[55\]\[6\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[58\]\[5\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[59\]\[0\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[59\]\[1\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[5\]\[1\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[5\]\[5\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[61\]\[3\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[61\]\[5\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[64\]\[4\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[64\]\[6\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[65\]\[4\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[66\]\[4\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[68\]\[1\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[68\]\[2\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[69\]\[0\]" from metal3 to via3 in cell processor.
+Moving label "dp.dm.mem\[71\]\[6\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[73\]\[6\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[74\]\[0\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[7\]\[4\]" from metal2 to via2 in cell processor.
+Moving label "dp.dm.mem\[80\]\[5\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[87\]\[6\]" from metal3 to via2 in cell processor.
+Moving label "dp.dm.mem\[8\]\[0\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[8\]\[3\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[94\]\[2\]" from metal1 to via1 in cell processor.
+Moving label "dp.dm.mem\[95\]\[4\]" from metal1 to viali in cell processor.
+Moving label "dp.dm.mem\[99\]\[4\]" from metal1 to viali in cell processor.
+Moving label "dp.rf.mem_reg\[0\]\[28\]" from metal1 to via1 in cell processor.
+Moving label "dp.rf.mem_reg\[0\]\[8\]" from metal1 to via1 in cell processor.
+Moving label "dp.rf.mem_reg\[1\]\[13\]" from metal1 to via1 in cell processor.
+Moving label "dp.rf.mem_reg\[1\]\[1\]" from metal2 to via1 in cell processor.
+Moving label "dp.rf.mem_reg\[4\]\[0\]" from metal1 to via1 in cell processor.
+Moving label "dp.rf.mem_reg\[8\]\[20\]" from metal1 to via1 in cell processor.
+Moving label "net1003" from metal3 to via3 in cell processor.
+Moving label "net1011" from metal3 to via3 in cell processor.
+Moving label "net1029" from metal2 to via2 in cell processor.
+Moving label "net104" from metal3 to via3 in cell processor.
+Moving label "net1051" from metal1 to viali in cell processor.
+Moving label "net1076" from metal2 to via2 in cell processor.
+Moving label "net1127" from metal3 to via3 in cell processor.
+Moving label "net1135" from metal3 to via3 in cell processor.
+Moving label "net1144" from metal2 to via2 in cell processor.
+Moving label "net1154" from metal2 to via2 in cell processor.
+Moving label "net119" from metal1 to via1 in cell processor.
+Moving label "net1191" from metal2 to via2 in cell processor.
+Moving label "net1197" from metal1 to via1 in cell processor.
+Moving label "net1224" from metal1 to via1 in cell processor.
+Moving label "net1234" from metal2 to via2 in cell processor.
+Moving label "net1246" from metal2 to via2 in cell processor.
+Moving label "net1283" from metal2 to via2 in cell processor.
+Moving label "net1319" from metal3 to via3 in cell processor.
+Moving label "net1338" from metal1 to via1 in cell processor.
+Moving label "net1343" from metal2 to via2 in cell processor.
+Moving label "net1377" from metal1 to via1 in cell processor.
+Moving label "net1413" from metal3 to via3 in cell processor.
+Moving label "net1418" from metal1 to via1 in cell processor.
+Moving label "net1423" from metal3 to via3 in cell processor.
+Moving label "net1437" from metal2 to via2 in cell processor.
+Moving label "net1448" from metal2 to via2 in cell processor.
+Moving label "net1465" from metal2 to via2 in cell processor.
+Moving label "net1495" from metal1 to via1 in cell processor.
+Moving label "net1496" from metal3 to via2 in cell processor.
+Moving label "net1530" from metal2 to via2 in cell processor.
+Moving label "net1533" from metal1 to viali in cell processor.
+Moving label "net1535" from metal1 to via1 in cell processor.
+Moving label "net1542" from metal1 to via1 in cell processor.
+Moving label "net1551" from metal1 to via1 in cell processor.
+Moving label "net1555" from metal2 to via2 in cell processor.
+Moving label "net1631" from metal1 to via1 in cell processor.
+Moving label "net1637" from metal1 to viali in cell processor.
+Moving label "net1664" from metal2 to via2 in cell processor.
+Moving label "net1733" from metal2 to via2 in cell processor.
+Moving label "net1736" from metal2 to via1 in cell processor.
+Moving label "net1744" from metal2 to via2 in cell processor.
+Moving label "net1767" from metal1 to viali in cell processor.
+Moving label "net1775" from metal1 to via1 in cell processor.
+Moving label "net1793" from metal2 to via2 in cell processor.
+Moving label "net181" from metal2 to via1 in cell processor.
+Moving label "net1868" from metal2 to via2 in cell processor.
+Moving label "net193" from metal2 to via2 in cell processor.
+Moving label "net1944" from metal2 to via2 in cell processor.
+Moving label "net1947" from metal1 to viali in cell processor.
+Moving label "net197" from metal2 to via2 in cell processor.
+Moving label "net200" from metal2 to via2 in cell processor.
+Moving label "net2011" from metal1 to viali in cell processor.
+Moving label "net217" from metal3 to via3 in cell processor.
+Moving label "net2209" from metal2 to via2 in cell processor.
+Moving label "net2311" from metal3 to via3 in cell processor.
+Moving label "net2446" from metal2 to via1 in cell processor.
+Moving label "net2479" from metal2 to via2 in cell processor.
+Moving label "net2539" from metal2 to via1 in cell processor.
+Moving label "net2631" from metal1 to via1 in cell processor.
+Moving label "net2725" from metal1 to viali in cell processor.
+Moving label "net2827" from metal2 to via1 in cell processor.
+Moving label "net287" from metal2 to via1 in cell processor.
+Moving label "net2899" from metal1 to viali in cell processor.
+Moving label "net295" from metal2 to via2 in cell processor.
+Moving label "net301" from metal1 to viali in cell processor.
+Moving label "net302" from metal2 to via1 in cell processor.
+Moving label "net3021" from metal1 to viali in cell processor.
+Moving label "net324" from metal2 to via2 in cell processor.
+Moving label "net362" from metal1 to via1 in cell processor.
+Moving label "net409" from metal1 to viali in cell processor.
+Moving label "net430" from metal2 to via2 in cell processor.
+Moving label "net450" from metal2 to via2 in cell processor.
+Moving label "net49" from metal2 to via2 in cell processor.
+Moving label "net491" from metal2 to via1 in cell processor.
+Moving label "net493" from metal3 to via3 in cell processor.
+Moving label "net50" from metal2 to via1 in cell processor.
+Moving label "net587" from metal3 to via3 in cell processor.
+Moving label "net599" from metal3 to via3 in cell processor.
+Moving label "net632" from metal2 to via2 in cell processor.
+Moving label "net639" from metal3 to via3 in cell processor.
+Moving label "net66" from metal2 to via2 in cell processor.
+Moving label "net660" from metal2 to via2 in cell processor.
+Moving label "net663" from metal2 to via2 in cell processor.
+Moving label "net684" from metal2 to via2 in cell processor.
+Moving label "net687" from metal1 to via1 in cell processor.
+Moving label "net703" from metal1 to via1 in cell processor.
+Moving label "net713" from metal2 to via2 in cell processor.
+Moving label "net720" from metal1 to viali in cell processor.
+Moving label "net751" from metal2 to via2 in cell processor.
+Moving label "net756" from metal2 to via2 in cell processor.
+Moving label "net786" from metal2 to via2 in cell processor.
+Moving label "net791" from metal2 to via2 in cell processor.
+Moving label "net794" from metal1 to viali in cell processor.
+Moving label "net803" from metal3 to via3 in cell processor.
+Moving label "net806" from metal2 to via1 in cell processor.
+Moving label "net828" from metal2 to via2 in cell processor.
+Moving label "net847" from metal1 to via1 in cell processor.
+Moving label "net882" from metal2 to via2 in cell processor.
+Moving label "net884" from metal1 to via1 in cell processor.
+Moving label "net890" from metal2 to via2 in cell processor.
+Moving label "net928" from metal2 to via2 in cell processor.
+Moving label "net929" from metal2 to via1 in cell processor.
+Moving label "net961" from metal1 to via1 in cell processor.
+Moving label "net972" from metal1 to viali in cell processor.
+Moving label "net987" from metal1 to via1 in cell processor.
+[INFO] Ignoring 'VPWR VGND'
+[INFO] Writing abstract LEF…
+[INFO] Not specifiying -pinonly (nets connected to pins on the same layer are declared as part of the pin)…
+Generating LEF output /home/thu/openlane2/designs/cpu_riscv/runs/RUN_2026-07-14_03-15-21/58-magic-writelef/processor.lef for cell processor:
+Diagnostic:  Write LEF header for cell processor
+Diagnostic:  Writing LEF output for cell processor
+Diagnostic:  Scale value is 0.005000
+[INFO] LEF Write Complete.
+Using technology "sky130A", version 1.0.493-0-g0fe599b
