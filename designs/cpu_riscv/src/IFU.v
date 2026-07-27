@@ -5,7 +5,7 @@ input [31:0]pc_bran, pc_jalr;
 output [31:0] instruction_code;
 output [31:0]pc_next, pc_current;
 reg [31:0] PC= 32'b0;
-INSTR_MEM instr_mem(PC, instruction_code);
+INSTR_MEM instr_mem(PC, reset,  instruction_code);
 wire [31:0]pc_in = pc_sel == 2'b0 ? PC+4 :
 						 pc_sel == 2'b1 ? pc_bran :
 						 pc_sel == 2'b10 ? {pc_jalr [31:1],1'b0} : PC+4   ;

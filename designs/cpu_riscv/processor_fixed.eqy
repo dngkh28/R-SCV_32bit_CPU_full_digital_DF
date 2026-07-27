@@ -1,0 +1,33 @@
+
+[script]
+verilog_defines -DPDK_sky130A
+verilog_defines -DSCL_sky130_fd_sc_hd
+verilog_defines -D__openlane__
+verilog_defines -D__pnr__
+read_liberty -lib -ignore_miss_dir -setattr blackbox /home/thu/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+blackbox
+
+[gold]
+read_verilog -formal -sv /home/thu/openlane2/designs/cpu_riscv/src/IFU.v /home/thu/openlane2/designs/cpu_riscv/src/IMM_GEN.v /home/thu/openlane2/designs/cpu_riscv/src/INSTR_MEM.v /home/thu/openlane2/designs/cpu_riscv/src/alu.v /home/thu/openlane2/designs/cpu_riscv/src/branch_comp.v /home/thu/openlane2/designs/cpu_riscv/src/controller.v /home/thu/openlane2/designs/cpu_riscv/src/data_mem.v /home/thu/openlane2/designs/cpu_riscv/src/data_path.v /home/thu/openlane2/designs/cpu_riscv/src/mux.v /home/thu/openlane2/designs/cpu_riscv/src/mux3.v /home/thu/openlane2/designs/cpu_riscv/src/processor.v /home/thu/openlane2/designs/cpu_riscv/src/reg_file.v
+
+[gate]
+read_verilog -formal -sv /home/thu/openlane2/designs/cpu_riscv/runs/lec_check/01-yosys-eqy/formal_pdk.v designs/cpu_riscv/runs/lec_synth/02-yosys-synthesis/processor.nl.v
+
+[script]
+hierarchy -top processor -purge_lib
+proc
+prep -top processor -flatten
+
+memory
+async2sync
+
+[gold]
+write_verilog /home/thu/openlane2/designs/cpu_riscv/runs/lec_check4/01-yosys-eqy/gold.v
+
+[gate]
+write_verilog /home/thu/openlane2/designs/cpu_riscv/runs/lec_check4/01-yosys-eqy/gate.v
+
+[strategy pdr]
+use sby
+engine abc pdr -rfi

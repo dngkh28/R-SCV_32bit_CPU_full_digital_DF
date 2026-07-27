@@ -5,5 +5,6 @@
   "CLOCK_PERIOD": 20,
   "FP_PDN_MULTILAYER": true,
   "FP_CORE_UTIL": 20,
-  "GRT_ADJUSTMENT": 0.1
+  "GRT_ADJUSTMENT": 0.1,
+  "RUN_EQY": true
 }

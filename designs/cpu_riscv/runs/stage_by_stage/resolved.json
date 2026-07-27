@@ -163,7 +163,7 @@
     "RUN_KLAYOUT_XOR": true,
     "RUN_MAGIC_DRC": true,
     "RUN_KLAYOUT_DRC": true,
-    "RUN_EQY": false,
+    "RUN_EQY": true,
     "RUN_LINTER": true,
     "VERILOG_FILES": [
         "/home/thu/openlane2/designs/cpu_riscv/src/IFU.v",

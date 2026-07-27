@@ -1,0 +1,14 @@
+Subprocess had a non-zero exit.
+Last 10 line(s):
+EQY 16:16:59 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] read_gold: starting process "yosys -ql /home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch/gold.log /home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch/gold.ys"
+EQY 16:16:59 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] read_gold: Warning: Replacing memory \mem with list of registers. See /home/thu/openlane2/designs/cpu_riscv/src/data_mem.v:50
+EQY 16:16:59 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] read_gate: starting process "yosys -ql /home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch/gate.log /home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch/gate.ys"
+EQY 16:17:00 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] read_gold: Warning: Replacing memory \mem_reg with list of registers. See /home/thu/openlane2/designs/cpu_riscv/src/reg_file.v:17
+EQY 16:17:04 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] read_gold: finished (returncode=0)
+EQY 16:17:56 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] read_gate: finished (returncode=0)
+EQY 16:17:56 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] combine: starting process "yosys -ql /home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch/combine.log /home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch/combine.ys"
+EQY 16:18:04 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] combine: ERROR: Unmatched module exists in gold that does not exist in gate. This should not happen. Please report this bug.
+EQY 16:18:04 \[/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch] combine: finished (returncode=1)
+ERROR: Failed to combine designs. For details see '/home/thu/openlane2/designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/scratch/combine.log'.
+
+Full log file: 'designs/cpu_riscv/runs/stage_by_stage/75-yosys-eqy/yosys-eqy.log'
